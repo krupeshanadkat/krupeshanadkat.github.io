@@ -73,6 +73,7 @@ h1+hr{
 /*************************************** Containers Design ********/
 .container{
 	background-color: white;
+	opacity: 0.9;
 	border-radius: 5px;
 	position:relative;
 	padding: 10px;
@@ -98,6 +99,8 @@ h1+hr{
 	margin-top: 60px;
 	margin-bottom: 30px;
 	padding-left: 5px;
+	letter-spacing: 1px;
+	line-height: 20px;
 }
 
 
