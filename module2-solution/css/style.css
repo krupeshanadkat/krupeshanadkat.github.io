@@ -4,3 +4,110 @@ Breakpoints :
 - Tablet version    :   768px and 991px
 - Mobile version    :   767px and below
 */
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+	font-family: sans-serif;
+	background: rgb(113,205,101);
+    background: linear-gradient(135deg, rgba(113,205,101,1) 0%, rgba(168,188,72,1) 50%, rgba(110,216,93,1) 100%);	
+}
+
+body>h1{
+	margin: 100px auto 10px auto;
+	font-size: 48px;
+	font-weight: lighter;
+	letter-spacing: 10px;
+	color: white;
+}
+h1+hr{
+	width: 300px;
+	height: 5px;
+	background-color: darkgreen;
+	border: 0px solid;
+}
+
+/******************* My Responsive Grid ************/
+.row{
+	width: 100%;
+	padding: 3%;
+}
+
+/************** Desktop Version *****************/
+@media (min-width: 992px) {
+	.col-dk-4{
+		height: 260px;
+		float: left;
+		width: 33.33%;
+	}
+}
+
+/************** Tablet Version *****************/
+@media (min-width: 768px) and (max-width: 991px) {
+	.col-tb-6{
+		height: 240px;
+		float: left;
+		width: 50%;
+	}
+	.col-tb-12{
+		height: 150px;
+		float: left;
+		width: 100%;
+	}
+}
+
+/************** Mobile Version *****************/
+@media (max-width: 767px) {
+	.col-mb-12{
+		height: 150px;
+		float: left;
+		width: 100%;
+	}
+}
+
+/************************************************/
+
+.container{
+	background-color: white;
+	
+	margin-top: 20px;
+	border: 1px solid #444;
+	padding: 10px;
+	position:relative;
+}
+
+#head1{
+	background-color: #C85815;
+	color: white;
+	font-weight: lighter;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	padding: 10px;
+}
+
+#head2{
+	background-color: #1F86BB;
+	color: white;
+	font-weight: lighter;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	padding: 10px;
+}
+
+#head3{
+	background-color: #0A8F3C;
+	color: white;
+	font-weight: lighter;
+	position: absolute;
+	top: -20px;
+	right: 0;
+	padding: 10px;
+}
+
+.content{
+	margin-top: 60px;
+}
