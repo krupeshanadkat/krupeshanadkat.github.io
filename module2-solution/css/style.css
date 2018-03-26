@@ -5,16 +5,20 @@ Breakpoints :
 - Mobile version    :   767px and below
 */
 
+/* NOTE : I have use Box Shadow inplace of border as it make containers look more beautiful. */
+
+/*=========================================================================================================*/
+
 * {
   box-sizing: border-box;
 }
-
 body{
 	font-family: sans-serif;
 	background: rgb(113,205,101);
     background: linear-gradient(135deg, rgba(113,205,101,1) 0%, rgba(168,188,72,1) 50%, rgba(110,216,93,1) 100%);	
 }
 
+/*************************************** Heading & Horizontal rule */
 body>h1{
 	margin: 100px auto 10px auto;
 	font-size: 48px;
@@ -29,12 +33,13 @@ h1+hr{
 	border: 0px solid;
 }
 
-/******************* My Responsive Grid ************/
+
+/*************************************** Grid Row *****************/
 .row{
 	width: 100%;
 	padding: 3%;
 }
-/************** Desktop Version *****************/
+/*************************************** Desktop Columns **********/
 @media (min-width: 992px) {
 	.col-dk-4{
 		float: left;
@@ -42,7 +47,7 @@ h1+hr{
 		padding: 1%;
 	}
 }
-/************** Tablet Version *****************/
+/*************************************** Tablet Columns ***********/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-tb-6{
 		float: left;
@@ -55,7 +60,7 @@ h1+hr{
 		padding: 1%;
 	}
 }
-/************** Mobile Version *****************/
+/*************************************** Mobile Columns ***********/
 @media (max-width: 767px) {
 	.col-mb-12{
 		float: left;
@@ -63,16 +68,16 @@ h1+hr{
 		padding: 1%;
 	}
 }
-/************************************************/
 
+
+/*************************************** Containers Design ********/
 .container{
 	background-color: white;
-	margin-top: 20px;
-	border: 1px solid #444;
+	border-radius: 5px;
 	position:relative;
 	padding: 10px;
+	box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.3);
 }
-
 .head{
 	color: white;
 	font-weight: lighter;
@@ -80,20 +85,26 @@ h1+hr{
 	top: -20px;
 	right: 0;
 	padding: 10px;
+	border-radius: 0px 5px 0px 5px;
 }
-
 .content{
 	margin-top: 60px;
+	margin-bottom: 30px;
+	padding-left: 5px;
 }
 
+
+/*************************************** Heading Background Colors */
 #head1{
 	background-color: #C85815;
 }
-
 #head2{
 	background-color: #1F86BB;
 }
-
 #head3{
 	background-color: #0A8F3C;
 }
+
+
+
+/*=========================================================================================================*/
