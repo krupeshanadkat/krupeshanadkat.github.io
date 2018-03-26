@@ -38,32 +38,32 @@ h1+hr{
 /************** Desktop Version *****************/
 @media (min-width: 992px) {
 	.col-dk-4{
-		height: 260px;
 		float: left;
 		width: 33.33%;
+		padding: 1%;
 	}
 }
 
 /************** Tablet Version *****************/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-tb-6{
-		height: 200px;
 		float: left;
 		width: 50%;
+		padding: 1%;
 	}
 	.col-tb-12{
-		height: 38%;
 		float: left;
 		width: 100%;
+		padding: 1%;
 	}
 }
 
 /************** Mobile Version *****************/
 @media (max-width: 767px) {
 	.col-mb-12{
-		height: 38%;
 		float: left;
 		width: 100%;
+		padding: 1%;
 	}
 }
 
@@ -71,35 +71,13 @@ h1+hr{
 
 .container{
 	background-color: white;
-	
 	margin-top: 20px;
 	border: 1px solid #444;
-	padding: 10px;
 	position:relative;
-}
-
-#head1{
-	background-color: #C85815;
-	color: white;
-	font-weight: lighter;
-	position: absolute;
-	top: -20px;
-	right: 0;
 	padding: 10px;
 }
 
-#head2{
-	background-color: #1F86BB;
-	color: white;
-	font-weight: lighter;
-	position: absolute;
-	top: -20px;
-	right: 0;
-	padding: 10px;
-}
-
-#head3{
-	background-color: #0A8F3C;
+.head{
 	color: white;
 	font-weight: lighter;
 	position: absolute;
@@ -110,4 +88,16 @@ h1+hr{
 
 .content{
 	margin-top: 60px;
+}
+
+#head1{
+	background-color: #C85815;
+}
+
+#head2{
+	background-color: #1F86BB;
+}
+
+#head3{
+	background-color: #0A8F3C;
 }
