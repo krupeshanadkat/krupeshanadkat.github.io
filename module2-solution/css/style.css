@@ -47,12 +47,12 @@ h1+hr{
 /************** Tablet Version *****************/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-tb-6{
-		height: 240px;
+		height: 200px;
 		float: left;
 		width: 50%;
 	}
 	.col-tb-12{
-		height: 150px;
+		height: 38%;
 		float: left;
 		width: 100%;
 	}
@@ -61,7 +61,7 @@ h1+hr{
 /************** Mobile Version *****************/
 @media (max-width: 767px) {
 	.col-mb-12{
-		height: 150px;
+		height: 38%;
 		float: left;
 		width: 100%;
 	}
