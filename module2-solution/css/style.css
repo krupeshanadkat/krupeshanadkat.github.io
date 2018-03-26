@@ -34,7 +34,6 @@ h1+hr{
 	width: 100%;
 	padding: 3%;
 }
-
 /************** Desktop Version *****************/
 @media (min-width: 992px) {
 	.col-dk-4{
@@ -43,7 +42,6 @@ h1+hr{
 		padding: 1%;
 	}
 }
-
 /************** Tablet Version *****************/
 @media (min-width: 768px) and (max-width: 991px) {
 	.col-tb-6{
@@ -57,7 +55,6 @@ h1+hr{
 		padding: 1%;
 	}
 }
-
 /************** Mobile Version *****************/
 @media (max-width: 767px) {
 	.col-mb-12{
@@ -66,7 +63,6 @@ h1+hr{
 		padding: 1%;
 	}
 }
-
 /************************************************/
 
 .container{
