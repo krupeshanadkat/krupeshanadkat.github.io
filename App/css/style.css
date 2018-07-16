@@ -1,0 +1,121 @@
+body,html{
+    height: 100%;
+}
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open sans';
+    background-color: #229bd0;
+    background-image: linear-gradient(233deg, #229bd0 0%, #1dd683 100%);
+    background-attachment: fixed;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 20px;
+    grid-template-columns: 300px 800px;
+    grid-template-rows: 1fr;   
+}
+.main-container{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    position: relative;
+    background-color: #fff;
+    height: 550px;
+    width: 800px;
+    box-shadow: 0px 3px 30px rgba(0,0,0,.4);
+}
+.month-info{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 14px 20px;
+    background-color: #F7F7F7;
+}
+.btn:link, .btn:visited {
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+    width: 80px;
+    padding: 8px 15px;
+    background-color: #4096E1;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+    border-radius: 3px;
+    box-shadow: 0px 3px 20px rgba(0,0,0,.1);
+    transition: all .3s;
+}
+.btn:hover{
+    transform: scale(1.05);
+    box-shadow: 0px 3px 30px rgba(0,0,0,.2);
+}
+.btn:active{
+    transform:scale(1);
+    box-shadow: 0px 0px 10px rgba(0,0,0,.1);  
+}
+table{
+    width: 100%;
+    overflow-y: auto;
+}
+thead, tbody, tfoot{
+    text-align: left;}
+thead{
+    background-color: #F7F7F7;
+    font-weight: semibold;
+    color: #4a4a4a;
+    font-size: 14px;
+    text-transform: uppercase;}
+th{
+    padding: 14px;}
+td{
+    color: #4a4a4a;
+    padding: 15px;
+    border-bottom: 1px solid #e6e6e6;}
+tfoot{
+    background-color: #F7F7F7;}
+thead th:last-child{
+    text-align: center;
+}
+td:last-child{
+    text-align: center;
+}
+.form-modal{
+    grid-row: 1/2;
+    grid-column: 1/2;
+    padding: 20px;
+    width: 300px;
+    height: 550px;
+    background-color: #fff;
+    box-shadow: 0px 3px 30px rgba(0,0,0,.4);
+}
+.form-modal h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-modal label{
+    display: block;
+    margin: 25px 0 5px 2px;
+    font-weight: 500;
+}
+.form-modal input, .form-modal select{
+    width: 125px;
+    border: none;
+    background-color: #f7f7f7;
+    padding: 10px 10px;
+}
+.form-modal #year,.form-modal #date{margin-top: 5px;}
+.form-modal #todayBtn{
+    display: inline-block;
+    background-color: rgb(233, 137, 27);
+}
+.form-modal .label-3{
+    margin-top: 40px;
+}
+.form-modal #inWithdrew{
+    width: 100%;
+}
+.form-modal #addMonthInfo{
+    background-color: rgb(7, 151, 55);
+}

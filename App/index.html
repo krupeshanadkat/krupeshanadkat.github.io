@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget AppS</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/mustache" id="main-temp">
+        {{#info}}
+            <tr>
+                <td>{{date}}</td>
+                <td>{{day}}</td>
+                <td>{{item}}</td>
+                <td>{{price}} /-</td>
+                <td><a href="#" data-id={{id}} class="editInfo">Edit</a> | <a href="#dailyInfoTable" data-id={{id}} class="deleteInfo">Delete</a></td>
+            </tr>
+        {{/info}}
+    </script>
+</head>
+<body>
+    <div class="main-container">
+        <div class="month-info">
+            <span>Withdrew : <span id="withdrew">0</span></span>
+            <span>Spent : <span id="spent">0</span></span>
+            <span>Saving : <span id="saving">0</span></span>
+        </div>
+        <table>
+            <thead>
+                <th>Date</th>
+                <th>Day</th>
+                <th>Item</th>
+                <th>Price</th>
+                <th>Modify</th>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </div>
+    <div class="form-modal">
+        <h2>Add Item</h2>
+        <label for="day">Date :</label>
+        <select id="day">
+            <option value="default">Select Day</option>
+            <option value="Monday">Monday</option>
+            <option value="Tuesday">Tuesday</option>
+            <option value="Wednesday">Wednesday</option>
+            <option value="Thursday">Thursday</option>
+            <option value="Friday">Friday</option>
+            <option value="Saturday">Saturday</option>
+            <option value="Sunday">Sunday</option>
+        </select>
+        <select id="month">
+            <option value="default">Select Month</option>
+            <option value="January">January</option>
+            <option value="February">February</option>
+            <option value="March">March</option>
+            <option value="April">April</option>
+            <option value="May">May</option>
+            <option value="June">June</option>
+            <option value="July">July</option>
+            <option value="August">August</option>
+            <option value="September">September</option>
+            <option value="October">October</option>
+            <option value="November">November</option>
+            <option value="December">December</option>
+        </select>
+        <input type="number" id="date" min="1" max="31" placeholder="Date">
+        <input type="number" id="year" value="2018">
+        <a href="#" class="btn" id="todayBtn">Today ?</a>
+        
+        <label>Item & Cost :</label>
+        <input type="text" id="itemName" placeholder="Lunch">
+        <input type="number" id="cost" placeholder="60">
+        <a role="button" href="#" class="btn" id="addItem">Submit</a>
+        
+        <label class="label-3">Withdrew :</label>
+        <input type="number" id="inWithdrew" min="0" placeholder="Withdrew">
+        <a role="button" href="#" class="btn" id="addMonthInfo">Submit</a>
+    </div>
+    <script src="js/mustache.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
